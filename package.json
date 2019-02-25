@@ -1,15 +1,40 @@
 {
-    "name": "react-sapphire",
-    "version": "1.0.4",
-    "description": "React Reusable Components",
+    "name": "react-shrinkwrap",
+    "version": "1.0.0",
+    "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test:unit": "jest",
+        "build": "webpack --mode production",
+        "watch": "webpack-dev-server --mode development --config ./webpack.dev.config.js"
     },
-    "keywords": [
-        "react",
-        "react-component"
-    ],
+    "keywords": [],
     "author": "Ginja the Ninja",
-    "license": "ISC"
+    "license": "ISC",
+    "dependencies": {
+        "react": "16.8.0",
+        "react-dom": "16.8.0",
+        "prop-types": "15.6.2"
+    },
+    "devDependencies": {
+        "babel": "6.23.0",
+        "babel-core": "6.26.3",
+        "babel-env": "2.4.1",
+        "babel-eslint": "10.0.1",
+        "babel-loader": "7.1.5",
+        "babel-polyfill": "6.26.0",
+        "babel-preset-react": "6.24.1",
+        "css-loader": "1.0.1",
+        "cypress": "^3.1.5",
+        "eslint": "5.8.0",
+        "file-loader": "2.0.0",
+        "less": "3.9.0",
+        "less-loader": "4.1.0",
+        "react-test-renderer": "16.6.1",
+        "style-loader": "0.23.1",
+        "url-loader": "^1.1.2",
+        "webpack": "4.29.0",
+        "webpack-cli": "3.2.1",
+        "webpack-dev-server": "3.1.14"
+    }
 }

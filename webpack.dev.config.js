@@ -20,9 +20,13 @@ module.exports = {
         rules: [
             {
                 test: /\.(js|jsx)$/,
+                include: path.resolve(__dirname, "src"),
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader"
+                    loader: "babel-loader",
+                    options: {
+                        presets: ["env"]
+                    }
                 }
             },
             {

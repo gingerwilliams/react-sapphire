@@ -2,7 +2,10 @@
 
 ## Installation
 To install run the following:
-```npm install react-sapphire```
+```
+npm install react-sapphire
+```
+
 ## API documentation
 Coming Soon... 
 

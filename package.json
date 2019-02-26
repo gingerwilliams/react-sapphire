@@ -1,6 +1,6 @@
 {
     "name": "react-sapphire",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "React Reusable Components",
     "main": "index.js",
     "scripts": {

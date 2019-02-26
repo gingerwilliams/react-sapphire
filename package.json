@@ -2,10 +2,10 @@
     "name": "react-sapphire",
     "version": "1.0.9",
     "description": "React Reusable Components",
-    "main": "index.js",
+    "main": "dist/index.js",
     "scripts": {
         "test:unit": "jest",
-        "build": "webpack --mode production --config ./webpack.config.js",
+        "build": "webpack",
         "watch": "webpack-dev-server --mode development --config ./webpack.config.js"
     },
     "keywords": [
@@ -14,6 +14,9 @@
     ],
     "author": "Ginja the Ninja",
     "license": "ISC",
+    "peerDependencies": {
+        "react": "16.8.0"
+    },
     "dependencies": {
         "react": "16.8.0",
         "react-dom": "16.8.0",

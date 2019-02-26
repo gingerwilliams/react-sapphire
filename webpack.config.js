@@ -5,7 +5,8 @@ module.exports = {
     output: {
         filename: "index.js",
         publicPath: "/dist/",
-        path: path.resolve(__dirname, "dist")
+        path: path.resolve(__dirname, "dist"),
+        libraryTarget: "commonjs2" // THIS IS THE MOST IMPORTANT LINE! :mindblow: I wasted more than 2 days until realize this was the line most important in all this guide.
     },
     devServer: {
         port: 8000,

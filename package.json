@@ -1,6 +1,6 @@
 {
     "name": "react-sapphire",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "React Reusable Components",
     "main": "dist/index.js",
     "repository": "https://github.com/gingerwilliams/react-sapphire",

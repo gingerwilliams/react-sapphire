@@ -5,5 +5,4 @@ class Button extends Component {
         return <div>Button new</div>;
     }
 }
-
 export default Button;

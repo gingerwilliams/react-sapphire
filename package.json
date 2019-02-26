@@ -3,44 +3,31 @@
     "version": "1.0.9",
     "description": "React Reusable Components",
     "main": "dist/index.js",
-    "scripts": {
-        "test:unit": "jest",
-        "build": "webpack",
-        "watch": "webpack-dev-server --mode development --config ./webpack.config.js"
+    "repository": "https://github.com/gingerwilliams/react-sapphire",
+    "author": {
+        "name": "Ginja the Ninja",
+        "email": "geedimensions@gmail.com"
     },
     "keywords": [
         "react",
         "react-component"
     ],
-    "author": "Ginja the Ninja",
-    "license": "ISC",
-    "peerDependencies": {
-        "react": "16.8.0"
-    },
-    "dependencies": {
-        "react": "16.8.0",
-        "react-dom": "16.8.0",
-        "prop-types": "15.6.2"
+    "scripts": {
+        "prepublish": "npm run dist",
+        "build": "babel src -d dist"
     },
     "devDependencies": {
-        "babel": "6.23.0",
-        "babel-core": "6.26.3",
-        "babel-env": "2.4.1",
-        "babel-eslint": "10.0.1",
-        "babel-loader": "7.1.5",
-        "babel-polyfill": "6.26.0",
-        "babel-preset-react": "6.24.1",
-        "css-loader": "1.0.1",
-        "cypress": "^3.1.5",
-        "eslint": "5.8.0",
-        "file-loader": "2.0.0",
-        "less": "3.9.0",
-        "less-loader": "4.1.0",
-        "react-test-renderer": "16.6.1",
-        "style-loader": "0.23.1",
-        "url-loader": "^1.1.2",
-        "webpack": "4.29.0",
-        "webpack-cli": "3.2.1",
-        "webpack-dev-server": "3.1.14"
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.4",
+        "babel-minify": "^0.4.3",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-0": "^6.24.1",
+        "babel-runtime": "^6.26.0",
+        "react": "^16.8.3",
+        "react-dom": "^16.8.3"
     }
 }

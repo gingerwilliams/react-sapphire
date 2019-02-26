@@ -1,9 +1,5 @@
-import React, { Component } from "react";
+import Button from "./components/Button";
 
-class Button extends Component {
-    render() {
-        return <div>Button new</div>;
-    }
-}
-
-export default Button;
+module.exports = {
+    Button: Button
+};

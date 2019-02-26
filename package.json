@@ -13,7 +13,7 @@
         "react-component"
     ],
     "scripts": {
-        "prepublishOnly": "npm run dist",
+        "prepublishOnly": "npm run build",
         "build": "babel src -d dist"
     },
     "devDependencies": {

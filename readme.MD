@@ -1,10 +1,29 @@
 # React Sapphire
 
-install:
-`npm install react-sapphire`
+## Installation
+To install run the following:
+```npm install react-sapphire```
+## API documentation
+Coming Soon... 
 
-import:
-`const uppercaser = require("react-sapphire");`
+## Examples:
 
-use:
-`console.log(uppercaser('hello medium!'));`
+```
+import React, { Component } from 'react';
+import { Button } from "react-sapphire";
+
+class App extends Component {
+    
+    render() {
+        return (
+            <div>
+                
+                <Button />
+               
+            </div>
+        );
+    }
+}
+
+export default App;
+```

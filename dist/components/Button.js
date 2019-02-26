@@ -31,9 +31,13 @@ var Button = function (_Component) {
         key: "render",
         value: function render() {
             return _react2.default.createElement(
-                "div",
-                null,
-                "Button new"
+                "button",
+                { "class": "button button_box button__center button_theme" },
+                _react2.default.createElement(
+                    "span",
+                    { "class": "button_text button_theme__text" },
+                    "Button Base"
+                )
             );
         }
     }]);

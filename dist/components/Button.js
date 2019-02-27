@@ -21,22 +21,32 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Button = function (_Component) {
     _inherits(Button, _Component);
 
-    function Button() {
+    function Button(props) {
         _classCallCheck(this, Button);
 
-        return _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this, props));
+
+        _this.state = {
+            classname: ""
+        };
+        return _this;
     }
 
     _createClass(Button, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement(
-                "button",
-                { "class": "button button_box button__center button_theme" },
+            var classname = this.state.classname;
+
+            return (
+                // <button className={classname}>
                 _react2.default.createElement(
-                    "span",
-                    { "class": "button_text button_theme__text" },
-                    "Button Base"
+                    "button",
+                    { className: "button button_box button__center button_theme" },
+                    _react2.default.createElement(
+                        "span",
+                        { className: "button_text button_theme__text" },
+                        "Button Base"
+                    )
                 )
             );
         }

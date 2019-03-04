@@ -10,6 +10,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _classnames = require("classnames");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24,28 +28,25 @@ var Button = function (_Component) {
     function Button(props) {
         _classCallCheck(this, Button);
 
-        var _this = _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this, props));
-
-        _this.state = {
-            classname: ""
-        };
-        return _this;
+        return _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this, props));
     }
 
     _createClass(Button, [{
         key: "render",
         value: function render() {
-            var classname = this.state.classname;
+            // const classes = classNames(
+            //     className
+            // );
 
             return (
-                // <button className={classname}>
+                // <button className="button button_box button__center button_theme">
                 _react2.default.createElement(
                     "button",
-                    { className: "button button_box button__center button_theme" },
+                    { className: this.props.classname },
                     _react2.default.createElement(
                         "span",
                         { className: "button_text button_theme__text" },
-                        "Button Base"
+                        this.props.children
                     )
                 )
             );
